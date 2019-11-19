@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "directories": {
-    "doc": "docs"
+    "doc": "docs",
+    "deploy": "sh deploy.sh"
   },
   "repository": "git@github.com:cwj1171350132/Vuepress_blog.git",
   "author": "Jack_Chan <1171350132@qq.com>",
