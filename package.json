@@ -1,21 +1,21 @@
 {
   "name": "Vuepress_blog",
-  "version": "1.0.0",
+  "version": "0.0.1",
+  "description": "my blog",
   "main": "index.js",
-  "directories": {
-    "doc": "docs",
-    "deploy": "sh deploy.sh"
+  "authors": {
+    "name": "Jack_Chan",
+    "email": "1171350132@qq.com"
   },
-  "repository": "git@github.com:cwj1171350132/Vuepress_blog.git",
-  "author": "Jack_Chan <1171350132@qq.com>",
-  "license": "MIT",
+  "repository": "git@github.com:cwj1171350132/Vuepress_blog.git/Vuepress_blog",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
   },
+  "license": "MIT",
   "devDependencies": {
-    "eslint": "^6.6.0",
-    "prettier": "^1.19.1",
-    "vuepress": "^1.2.0"
+    "vuepress": "^1.0.0",
+    "@vuepress/plugin-back-to-top": "^1.0.0",
+    "@vuepress/plugin-medium-zoom": "^1.0.0"
   }
 }
