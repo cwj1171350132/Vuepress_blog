@@ -2,6 +2,9 @@
   "name": "Vuepress_blog",
   "version": "1.0.0",
   "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
   "repository": "git@github.com:cwj1171350132/Vuepress_blog.git",
   "author": "Jack_Chan <1171350132@qq.com>",
   "license": "MIT",
@@ -10,6 +13,8 @@
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
+    "eslint": "^6.6.0",
+    "prettier": "^1.19.1",
     "vuepress": "^1.2.0"
   }
 }
