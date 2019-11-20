@@ -6,6 +6,7 @@ coverage/
 run
 dist
 public
+.idea/
 .DS_Store
 .nyc_output
 .basement
