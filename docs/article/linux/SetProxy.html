@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>🔖 常见代理设置</title>
+    <meta name="description" content="">
+    
+    <meta name="常见代理设置" content="Npm,Yarn,Git,Yum"><meta name="keywords" content="Npm Yarn Git Yum">
+    <link rel="preload" href="/assets/css/0.styles.6114eb0d.css" as="style"><link rel="preload" href="/assets/js/app.8a7e60dd.js" as="script"><link rel="preload" href="/assets/js/2.da663541.js" as="script"><link rel="preload" href="/assets/js/9.edab84ec.js" as="script"><link rel="prefetch" href="/assets/js/10.92ccd247.js"><link rel="prefetch" href="/assets/js/11.24cd3805.js"><link rel="prefetch" href="/assets/js/12.f418e841.js"><link rel="prefetch" href="/assets/js/13.a343ed23.js"><link rel="prefetch" href="/assets/js/3.fa2a968c.js"><link rel="prefetch" href="/assets/js/4.59116900.js"><link rel="prefetch" href="/assets/js/5.9090d4ee.js"><link rel="prefetch" href="/assets/js/6.e0b4a00a.js"><link rel="prefetch" href="/assets/js/7.a7e94647.js"><link rel="prefetch" href="/assets/js/8.6582909c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6114eb0d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="常见代理设置"><a href="#常见代理设置" class="header-anchor">#</a> 🔖 常见代理设置</h1> <h2 id="git代理设置"><a href="#git代理设置" class="header-anchor">#</a> Git代理设置</h2> <h3 id="设置代理"><a href="#设置代理" class="header-anchor">#</a> 设置代理</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">git</span> config --global https.proxy 代理地址
+<span class="token function">git</span> config --global http.proxy 代理地址
+</code></pre></div><h3 id="查看当前已设置的代理"><a href="#查看当前已设置的代理" class="header-anchor">#</a> 查看当前已设置的代理</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">git</span> config --global  --get https.proxy
+
+<span class="token function">git</span> config --global  --get https.proxy
+</code></pre></div><h3 id="取消代理"><a href="#取消代理" class="header-anchor">#</a> 取消代理</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">git</span> config --global --unset http.proxygit config --global --unset https.proxy
+</code></pre></div><h2 id="npm设置代理"><a href="#npm设置代理" class="header-anchor">#</a> <code>npm</code>设置代理</h2> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">npm</span> config <span class="token builtin class-name">set</span> proxy http://10.22.129.20:8080
+<span class="token function">npm</span> config <span class="token builtin class-name">set</span> proxy https://10.22.129.20:8080
+</code></pre></div><h2 id="yarn设置代理"><a href="#yarn设置代理" class="header-anchor">#</a> <code>yarn</code>设置代理</h2> <h3 id="配置国内镜像-淘宝镜像"><a href="#配置国内镜像-淘宝镜像" class="header-anchor">#</a> 配置国内镜像-淘宝镜像</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">yarn</span> config <span class="token builtin class-name">set</span> registry https://registry.npm.taobao.org
+</code></pre></div><h3 id="查看代理"><a href="#查看代理" class="header-anchor">#</a> 查看代理</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">yarn</span> config list
+</code></pre></div><h3 id="设置代理-2"><a href="#设置代理-2" class="header-anchor">#</a> 设置代理</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">yarn</span> config <span class="token builtin class-name">set</span> proxy http://10.22.3.21:8080  http://username:password@server:port
+<span class="token function">yarn</span> confit <span class="token builtin class-name">set</span> https-proxy http://username:password@server:port
+</code></pre></div><h3 id="取消代理-2"><a href="#取消代理-2" class="header-anchor">#</a> 取消代理</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">yarn</span> config delete proxy
+<span class="token function">yarn</span> config delete https-proxy
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.8a7e60dd.js" defer></script><script src="/assets/js/2.da663541.js" defer></script><script src="/assets/js/9.edab84ec.js" defer></script>
+  </body>
+</html>
