@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>🔖 常见代理设置 | Jack_Chan blog</title>
+    <meta name="description" content="my blog">
+    <meta name="theme-color" content="#3eaf7c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="常见代理设置" content="Npm,Yarn,Git,Yum"><meta name="keywords" content="Npm Yarn Git Yum">
+    <link rel="preload" href="/Vuepress_blog/assets/css/0.styles.3b20f443.css" as="style"><link rel="preload" href="/Vuepress_blog/assets/js/app.c686cb65.js" as="script"><link rel="preload" href="/Vuepress_blog/assets/js/2.52f48e71.js" as="script"><link rel="preload" href="/Vuepress_blog/assets/js/11.2e803c92.js" as="script"><link rel="prefetch" href="/Vuepress_blog/assets/js/10.ff116242.js"><link rel="prefetch" href="/Vuepress_blog/assets/js/12.92e36a4a.js"><link rel="prefetch" href="/Vuepress_blog/assets/js/13.ee256ded.js"><link rel="prefetch" href="/Vuepress_blog/assets/js/14.561b33c5.js"><link rel="prefetch" href="/Vuepress_blog/assets/js/15.857dc9fb.js"><link rel="prefetch" href="/Vuepress_blog/assets/js/3.a40af196.js"><link rel="prefetch" href="/Vuepress_blog/assets/js/4.a39c5507.js"><link rel="prefetch" href="/Vuepress_blog/assets/js/5.1385374b.js"><link rel="prefetch" href="/Vuepress_blog/assets/js/6.1de39c0b.js"><link rel="prefetch" href="/Vuepress_blog/assets/js/7.cc8f9b82.js"><link rel="prefetch" href="/Vuepress_blog/assets/js/8.d2cf7974.js"><link rel="prefetch" href="/Vuepress_blog/assets/js/9.cf184282.js">
+    <link rel="stylesheet" href="/Vuepress_blog/assets/css/0.styles.3b20f443.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Vuepress_blog/" class="home-link router-link-active"><!----> <span class="site-name">Jack_Chan blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Vuepress_blog/" class="nav-link">主页</a></div><div class="nav-item"><a href="/Vuepress_blog/article/" class="nav-link router-link-active">博客</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Vuepress_blog/" class="nav-link">主页</a></div><div class="nav-item"><a href="/Vuepress_blog/article/" class="nav-link router-link-active">博客</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>博客</span> <!----></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="常见代理设置"><a href="#常见代理设置" class="header-anchor">#</a> 🔖 常见代理设置</h1> <h2 id="git代理设置"><a href="#git代理设置" class="header-anchor">#</a> Git代理设置</h2> <h3 id="设置代理"><a href="#设置代理" class="header-anchor">#</a> 设置代理</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">git</span> config --global https.proxy 代理地址
+<span class="token function">git</span> config --global http.proxy 代理地址
+</code></pre></div><h3 id="查看当前已设置的代理"><a href="#查看当前已设置的代理" class="header-anchor">#</a> 查看当前已设置的代理</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">git</span> config --global  --get https.proxy
+
+<span class="token function">git</span> config --global  --get https.proxy
+</code></pre></div><h3 id="取消代理"><a href="#取消代理" class="header-anchor">#</a> 取消代理</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">git</span> config --global --unset http.proxygit config --global --unset https.proxy
+</code></pre></div><h2 id="npm设置代理"><a href="#npm设置代理" class="header-anchor">#</a> <code>npm</code>设置代理</h2> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">npm</span> config <span class="token builtin class-name">set</span> proxy http://10.22.129.20:8080
+<span class="token function">npm</span> config <span class="token builtin class-name">set</span> proxy https://10.22.129.20:8080
+</code></pre></div><h2 id="yarn设置代理"><a href="#yarn设置代理" class="header-anchor">#</a> <code>yarn</code>设置代理</h2> <h3 id="配置国内镜像-淘宝镜像"><a href="#配置国内镜像-淘宝镜像" class="header-anchor">#</a> 配置国内镜像-淘宝镜像</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">yarn</span> config <span class="token builtin class-name">set</span> registry https://registry.npm.taobao.org
+</code></pre></div><h3 id="查看代理"><a href="#查看代理" class="header-anchor">#</a> 查看代理</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">yarn</span> config list
+</code></pre></div><h3 id="设置代理-2"><a href="#设置代理-2" class="header-anchor">#</a> 设置代理</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">yarn</span> config <span class="token builtin class-name">set</span> proxy http://10.22.3.21:8080  http://username:password@server:port
+<span class="token function">yarn</span> confit <span class="token builtin class-name">set</span> https-proxy http://username:password@server:port
+</code></pre></div><h3 id="取消代理-2"><a href="#取消代理-2" class="header-anchor">#</a> 取消代理</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">yarn</span> config delete proxy
+<span class="token function">yarn</span> config delete https-proxy
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/Vuepress_blog/assets/js/app.c686cb65.js" defer></script><script src="/Vuepress_blog/assets/js/2.52f48e71.js" defer></script><script src="/Vuepress_blog/assets/js/11.2e803c92.js" defer></script>
+  </body>
+</html>
