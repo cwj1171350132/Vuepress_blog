@@ -238,12 +238,12 @@ console.log(numbers);
 
 ```javascript
 const authors = [
-  { name: '前端小智', age: 25 },
-  { name: '王大冶', age: 30 },
+  { name: 'bug', age: 25 },
+  { name: 'error', age: 30 },
 ]
 
 const copy = [...authors ]
-copy[0].name = '被更改过的前端小智'
+copy[0].name = '被改过的bug'
 
 console.log(copy)
 console.log(authors)
