@@ -48,7 +48,7 @@ module.exports = {
         link: '/article/',
         items: [ 
           { text: 'javascript', link: '/article/javascript' },
-          { text: 'linux', link: '/article/linux' },
+          { text: 'linux', link: '/article/linux/SetProxy' },
         ]
       },
     ],
@@ -57,6 +57,13 @@ module.exports = {
         title: '引言',
         collapsable: false,
         children: ['/']
+      },
+      {
+        title: 'linux',
+        collapsable: false,
+        children: [
+          '/article/linux/SetProxy',
+        ]
       },
     ]
   },
