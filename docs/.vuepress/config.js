@@ -1,4 +1,4 @@
-const { description } = require('../../package')
+// const { description } = require('../../package')
 
 module.exports = {
   /**
@@ -8,7 +8,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
-  description: description,
+  description: 'Jack_Chan blog',
 
   /**
    * Extra tags to be injected to the page HTML `<head>`
@@ -16,9 +16,12 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['link', { rel: 'icon', href: `/logo.png` }],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['meta', { name: 'theme-color', content: '#4987AF' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
 
   base:'/Vuepress_blog',
@@ -28,11 +31,13 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
-    editLinks: false,
-    docsDir: '',
-    editLinkText: '',
+    repo: 'cwj1171350132/Vuepress_blog/',
+    editLinks: true,
+    docsDir: 'docs',
+    editLinkText: '编辑此页',
     lastUpdated: false,
+    sidebarDepth: 3,
+    lastUpdated: '上次更新',
     nav: [
       {
         text: '主页',
@@ -47,17 +52,13 @@ module.exports = {
         ]
       },
     ],
-    sidebar: {
-      '/article/': [
-        {
-          title: '博客',
-          collapsable: false,
-          children: [
-            'javascript'
-          ]
-        }
-      ],
-    }
+    sidebar: [
+      {
+        title: '引言',
+        collapsable: false,
+        children: ['/']
+      },
+    ]
   },
 
   /**
