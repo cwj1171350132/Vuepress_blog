@@ -47,7 +47,7 @@ module.exports = {
         text: '博客',
         link: '/article/',
         items: [ 
-          { text: 'javascript', link: '/article/javascript' },
+          { text: 'javascript', link: '/article/javascript/koa' },
           { text: 'linux', link: '/article/linux/SetProxy' },
         ]
       },
@@ -63,6 +63,13 @@ module.exports = {
         collapsable: false,
         children: [
           '/article/linux/SetProxy',
+        ]
+      },
+      {
+        title: 'javascript',
+        collapsable: false,
+        children: [
+          '/article/javascript/koa',
         ]
       },
     ]
