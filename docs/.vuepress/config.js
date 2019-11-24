@@ -70,6 +70,7 @@ module.exports = {
         collapsable: false,
         children: [
           '/article/javascript/koa',
+          '/article/javascript/ArrayCopy',
         ]
       },
     ]
