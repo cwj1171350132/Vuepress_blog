@@ -1,6 +1,6 @@
-# Jack_Chan的博客
+# 小陈的博客
 
-本博客是Jack_Chan对于编程学习中的总结归纳。
+本博客是小陈对于编程学习中的总结归纳。
 
 ## How to contribute
 
