@@ -4,11 +4,11 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Jack_Chan blog',
+  title: '前端菜鸟小陈',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
-  description: 'Jack_Chan blog',
+  description: '前端菜鸟小城的博客',
 
   /**
    * Extra tags to be injected to the page HTML `<head>`
@@ -25,13 +25,14 @@ module.exports = {
   ],
 
   base:'/Vuepress_blog/',
+  theme: 'reco',
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
    *
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: 'cwj1171350132/Vuepress_blog/',
+    // repo: 'cwj1171350132/Vuepress_blog/',
     editLinks: true,
     docsDir: 'docs',
     editLinkText: '编辑此页',
