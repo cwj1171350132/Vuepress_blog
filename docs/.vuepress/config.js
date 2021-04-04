@@ -67,11 +67,20 @@ module.exports = {
         ]
       },
       {
+        title: '版本控制',
+        collapsable: false,
+        children: [
+          '/article/git/git',
+        ]
+      },
+      {
         title: 'javascript',
         collapsable: false,
         children: [
           '/article/javascript/koa',
           '/article/javascript/ArrayCopy',
+          '/article/javascript/JavascriptTouch',
+          '/article/javascript/JsStorage',
         ]
       },
     ]
@@ -81,7 +90,7 @@ module.exports = {
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
   plugins: [
-    '@vuepress/plugin-back-to-top',
+    // '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
   ]
 }
